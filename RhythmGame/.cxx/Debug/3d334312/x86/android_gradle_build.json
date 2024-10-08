@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "/Users/dipaksisodiya/work/rockstar/frontend/oboe-native-player/NativePlayerDemo/CMakeLists.txt",
+    "/Users/dipaksisodiya/work/rockstar/frontend/oboe/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/dipaksisodiya/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+      "-C",
+      "/Users/dipaksisodiya/work/rockstar/frontend/oboe-native-player/NativePlayerDemo/.cxx/Debug/3d334312/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/dipaksisodiya/Library/Android/sdk/cmake/3.18.1/bin/ninja",
+    "-C",
+    "/Users/dipaksisodiya/work/rockstar/frontend/oboe-native-player/NativePlayerDemo/.cxx/Debug/3d334312/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "output": "/Users/dipaksisodiya/work/rockstar/frontend/oboe-native-player/NativePlayerDemo/build/intermediates/cxx/Debug/3d334312/obj/x86/libnative-lib.so",
+      "runtimeFiles": []
+    },
+    "oboe::@2eb8bc11657237233fcf": {
+      "toolchain": "toolchain",
+      "abi": "x86",
+      "artifactName": "oboe",
+      "output": "/Users/dipaksisodiya/work/rockstar/frontend/oboe-native-player/NativePlayerDemo/.cxx/Debug/3d334312/x86/oboe-bin/liboboe.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/dipaksisodiya/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
+      "cppCompilerExecutable": "/Users/dipaksisodiya/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
