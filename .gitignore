@@ -9,5 +9,6 @@
 .externalNativeBuild
 test/build
 RhythmGame/build
+RhythmGame/.cxx
 audio-device/build
 
