@@ -1,0 +1,25 @@
+                    Executable : /Users/dipaksisodiya/Library/Android/sdk/cmake/3.18.1/bin/cmake
+arguments : 
+-H/Users/dipaksisodiya/work/oboe/samples/RhythmGame
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=/Users/dipaksisodiya/Library/Android/sdk/ndk/21.4.7075529
+-DCMAKE_ANDROID_NDK=/Users/dipaksisodiya/Library/Android/sdk/ndk/21.4.7075529
+-DCMAKE_TOOLCHAIN_FILE=/Users/dipaksisodiya/Library/Android/sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/dipaksisodiya/Library/Android/sdk/cmake/3.18.1/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++17
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/cxx/Debug/5o37111z/obj/armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/cxx/Debug/5o37111z/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/armeabi-v7a
+-GNinja
+-DUSE_FFMPEG=0
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

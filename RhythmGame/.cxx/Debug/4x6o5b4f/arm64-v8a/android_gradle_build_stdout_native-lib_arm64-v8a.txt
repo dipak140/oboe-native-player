@@ -1,0 +1,31 @@
+ninja: Entering directory `/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/.cxx/Debug/4x6o5b4f/arm64-v8a'
+[1/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/OpenSLESUtilities.cpp.o
+[2/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/OutputMixerOpenSLES.cpp.o
+[3/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/EngineOpenSLES.cpp.o
+[4/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/StabilizedCallback.cpp.o
+[5/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamBuffered.cpp.o
+[6/30] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o
+[7/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioOutputStreamOpenSLES.cpp.o
+[8/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioInputStreamOpenSLES.cpp.o
+[9/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/opensles/AudioStreamOpenSLES.cpp.o
+[10/30] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/NativePlayer.cpp.o
+[11/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/aaudio/AAudioLoader.cpp.o
+[12/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/AdpfWrapper.cpp.o
+[13/30] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/audio/AAssetDataSource.cpp.o
+[14/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/AudioSourceCaller.cpp.o
+[15/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStream.cpp.o
+[16/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/LatencyTuner.cpp.o
+[17/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/Utilities.cpp.o
+[18/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/aaudio/AudioStreamAAudio.cpp.o
+[19/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/OboeExtensions.cpp.o
+[20/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/AudioStreamBuilder.cpp.o
+[21/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/FilterAudioStream.cpp.o
+[22/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/DataConversionFlowGraph.cpp.o
+[23/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/SourceFloatCaller.cpp.o
+[24/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/fifo/FifoBuffer.cpp.o
+[25/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI16Caller.cpp.o
+[26/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI24Caller.cpp.o
+[27/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/SourceI32Caller.cpp.o
+[28/30] Building CXX object oboe-bin/CMakeFiles/oboe.dir/src/common/QuirksManager.cpp.o
+[29/30] Linking CXX static library oboe-bin/liboboe.a
+[30/30] Linking CXX shared library ../../../../build/intermediates/cxx/Debug/4x6o5b4f/obj/arm64-v8a/libnative-lib.so

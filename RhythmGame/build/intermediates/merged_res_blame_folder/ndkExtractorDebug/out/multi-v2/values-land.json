@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.oboe.samples.rhythmgame.RhythmGame-mergeNdkExtractorDebugResources-20:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/dipaksisodiya/.gradle/caches/transforms-3/f4e49ba1f7e3a4aa22a74ec014b1be22/transformed/appcompat-1.6.0-rc01/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}

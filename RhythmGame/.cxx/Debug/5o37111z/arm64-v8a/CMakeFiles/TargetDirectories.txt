@@ -1,0 +1,14 @@
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/install/local.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/install/strip.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/native-lib.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/install.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/list_install_components.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/install/local.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/install/strip.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/install.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/list_install_components.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/rebuild_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/edit_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/arm64-v8a/oboe-bin/CMakeFiles/oboe.dir

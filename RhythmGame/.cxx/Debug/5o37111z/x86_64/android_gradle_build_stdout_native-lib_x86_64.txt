@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/x86_64'
+ninja: no work to do.

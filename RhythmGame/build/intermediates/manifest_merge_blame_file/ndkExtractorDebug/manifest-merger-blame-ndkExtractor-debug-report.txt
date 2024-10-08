@@ -1,0 +1,85 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.oboe.samples.rhythmgame"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.google.oboe.samples.rhythmgame.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.google.oboe.samples.rhythmgame.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:5:5-21:19
+18        android:allowBackup="true"
+18-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.9.0] /Users/dipaksisodiya/.gradle/caches/transforms-3/7b5dfb4408a202d8804a5a831f3c7a74/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:7:9-43
+22        android:label="@string/app_name"
+22-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:8:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:9:9-54
+24        android:supportsRtl="true"
+24-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:10:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:11:9-40
+27        <activity
+27-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:12:9-20:20
+28            android:name="com.google.oboe.samples.rhythmgame.MainActivity"
+28-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:12:19-47
+29            android:exported="true"
+29-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:14:13-36
+30            android:screenOrientation="portrait" >
+30-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:13:13-49
+31            <intent-filter>
+31-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:15:13-19:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:16:17-69
+32-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:16:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:18:17-77
+34-->/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/src/main/AndroidManifest.xml:18:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:24:9-32:20
+39            android:name="androidx.startup.InitializationProvider"
+39-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:25:13-67
+40            android:authorities="com.google.oboe.samples.rhythmgame.androidx-startup"
+40-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:26:13-68
+41            android:exported="false" >
+41-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:27:13-37
+42            <meta-data
+42-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:29:13-31:52
+43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+43-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:30:17-75
+44                android:value="androidx.startup" />
+44-->[androidx.emoji2:emoji2:1.2.0-rc01] /Users/dipaksisodiya/.gradle/caches/transforms-3/8ebd650fae5b9837d6dd6813b6b9d07f/transformed/jetified-emoji2-1.2.0-rc01/AndroidManifest.xml:31:17-49
+45            <meta-data
+45-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/dipaksisodiya/.gradle/caches/transforms-3/79407e5a0839a94470762f954d9b865e/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+46-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/dipaksisodiya/.gradle/caches/transforms-3/79407e5a0839a94470762f954d9b865e/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+47                android:value="androidx.startup" />
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/dipaksisodiya/.gradle/caches/transforms-3/79407e5a0839a94470762f954d9b865e/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+48        </provider>
+49    </application>
+50
+51</manifest>

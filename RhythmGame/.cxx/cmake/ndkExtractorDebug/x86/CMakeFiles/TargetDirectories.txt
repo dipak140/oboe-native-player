@@ -1,0 +1,14 @@
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/install/local.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/install/strip.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/native-lib.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/install.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/list_install_components.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/rebuild_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/CMakeFiles/edit_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/install/local.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/install/strip.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/install.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/list_install_components.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/rebuild_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/edit_cache.dir
+/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/cmake/ndkExtractorDebug/x86/oboe-bin/CMakeFiles/oboe.dir

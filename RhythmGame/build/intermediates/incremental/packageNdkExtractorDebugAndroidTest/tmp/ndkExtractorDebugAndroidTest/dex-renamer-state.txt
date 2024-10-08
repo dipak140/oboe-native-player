@@ -1,0 +1,7 @@
+#Fri Aug 02 17:41:10 IST 2024
+base.1=/Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/dex/ndkExtractorDebugAndroidTest/mergeProjectDexNdkExtractorDebugAndroidTest/11/classes.dex
+path.1=11/classes.dex
+base.0=/Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/dex/ndkExtractorDebugAndroidTest/mergeProjectDexNdkExtractorDebugAndroidTest/0/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=0/classes.dex

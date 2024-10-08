@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.google.oboe.samples.rhythmgame",
+  "variantName": "ndkExtractorDebug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0",
+      "outputFile": "RhythmGame-ndkExtractor-debug.apk"
+    }
+  ],
+  "elementType": "File"
+}

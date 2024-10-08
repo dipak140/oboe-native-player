@@ -1,0 +1,9 @@
+com.google.oboe.samples.rhythmgame.test.RhythmGame-ndkExtractor-0 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/generated/res/resValues/androidTest/ndkExtractor/debug
+com.google.oboe.samples.rhythmgame.test.RhythmGame-ndkExtractor-1 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/generated/res/rs/androidTest/ndkExtractor/debug
+com.google.oboe.samples.rhythmgame.test.RhythmGame-mergeNdkExtractorDebugAndroidTestResources-2 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/incremental/ndkExtractorDebugAndroidTest/mergeNdkExtractorDebugAndroidTestResources/merged.dir
+com.google.oboe.samples.rhythmgame.test.RhythmGame-mergeNdkExtractorDebugAndroidTestResources-3 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/incremental/ndkExtractorDebugAndroidTest/mergeNdkExtractorDebugAndroidTestResources/stripped.dir
+com.google.oboe.samples.rhythmgame.test.RhythmGame-merged_res-4 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/build/intermediates/merged_res/ndkExtractorDebugAndroidTest
+com.google.oboe.samples.rhythmgame.test.RhythmGame-androidTest-5 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/src/androidTest/res
+com.google.oboe.samples.rhythmgame.test.RhythmGame-androidTestDebug-6 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/src/androidTestDebug/res
+com.google.oboe.samples.rhythmgame.test.RhythmGame-androidTestNdkExtractor-7 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/src/androidTestNdkExtractor/res
+com.google.oboe.samples.rhythmgame.test.RhythmGame-androidTestNdkExtractorDebug-8 /Users/dipaksisodiya/work/oboe/samples/RhythmGame/src/androidTestNdkExtractorDebug/res

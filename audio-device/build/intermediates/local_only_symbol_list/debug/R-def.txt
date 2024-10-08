@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+dimen default_padding
+id device_name
+layout audio_devices
+string auto_select
+string device_name

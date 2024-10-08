@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "com.google.oboe.samples.rhythmgame.test",
+  "variantName": "ndkExtractorDebugAndroidTest",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 0,
+      "versionName": "",
+      "outputFile": "resources-ndkExtractorDebugAndroidTest.ap_"
+    }
+  ],
+  "elementType": "File"
+}
