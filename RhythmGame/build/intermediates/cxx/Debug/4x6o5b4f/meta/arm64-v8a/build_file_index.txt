@@ -1,2 +1,0 @@
-/Users/dipaksisodiya/work/rockstar/frontend/oboe/CMakeLists.txt
-/Users/dipaksisodiya/work/rockstar/frontend/samples/RhythmGame/CMakeLists.txt
