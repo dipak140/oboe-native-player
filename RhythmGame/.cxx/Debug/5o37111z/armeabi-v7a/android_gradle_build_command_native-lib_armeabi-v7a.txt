@@ -1,7 +1,0 @@
-Executable : /Users/dipaksisodiya/Library/Android/sdk/cmake/3.18.1/bin/ninja
-arguments : 
--C
-/Users/dipaksisodiya/work/oboe/samples/RhythmGame/.cxx/Debug/5o37111z/armeabi-v7a
-native-lib
-jvmArgs : 
-
