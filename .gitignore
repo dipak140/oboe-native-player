@@ -8,3 +8,6 @@
 /captures
 .externalNativeBuild
 test/build
+RhythmGame/build
+audio-device/build
+
