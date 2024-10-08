@@ -15,7 +15,7 @@ add_library( native-lib
 
              # main game files
              src/main/cpp/native-lib.cpp
-             src/main/cpp/Game.cpp
+             src/main/cpp/NativePlayer.cpp
 
              # audio engine
              src/main/cpp/audio/AAssetDataSource.cpp
