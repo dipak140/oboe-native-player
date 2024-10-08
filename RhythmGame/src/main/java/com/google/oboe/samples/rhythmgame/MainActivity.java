@@ -24,6 +24,14 @@ import android.media.AudioManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.WindowManager;
+import com.arthenica.ffmpegkit.FFmpegKit;
+import com.arthenica.ffmpegkit.FFmpegSession;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setDefaultStreamValues(this);
+        processAudio();
     }
 
     protected void onResume(){
@@ -68,8 +77,60 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void convertMp3ToPcm() {
+        String outputDir = "samples";
+        File dir = new File(getExternalFilesDir(null), outputDir);
+
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+
+        File outFile = new File(dir, "Music.pcm");
+        String mp3FilePath = getExternalFilesDir(null) + "/" + outputDir + "/Music.mp3";
+        String pcmFilePath = outFile.getAbsolutePath();
+        String cmdStr = "-i " + mp3FilePath + " -f f32le -acodec pcm_f32le -ar 44100 -ac 2 " + pcmFilePath;
+        FFmpegSession rc = FFmpegKit.execute(cmdStr);
+        if (rc.getReturnCode().isValueSuccess()) {
+            // Conversion successful
+        } else {
+            // Handle error
+        }
+    }
+
+    private void processAudio() {
+        convertMp3ToPcm();
+
+        String mp3FilePath = getExternalFilesDir(null) + "/" + "samples" + "/Music.mp3";
+        String pcmFilePath = getExternalFilesDir(null) + "/" + "samples" + "/Music.pcm";
+
+        try {
+            byte[] pcmData = readPcmData(pcmFilePath);
+            ByteBuffer pcmBuffer = ByteBuffer.allocateDirect(pcmData.length);
+            pcmBuffer.put(pcmData);
+
+            // Reset buffer position to zero before passing to native code
+            pcmBuffer.flip();
+
+            // Assuming stereo audio at 44100 Hz
+            passPcmData(pcmBuffer, 2, 48000);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private native void native_onStart(AssetManager assetManager);
     private native void native_onStop();
     private static native void native_setDefaultStreamValues(int defaultSampleRate,
                                                       int defaultFramesPerBurst);
+    public native void passPcmData(ByteBuffer pcmBuffer, int numChannels, int sampleRate);
+
+
+    public byte[] readPcmData(String pcmFilePath) throws IOException {
+        File pcmFile = new File(pcmFilePath);
+        byte[] pcmData = new byte[(int) pcmFile.length()];
+        FileInputStream fis = new FileInputStream(pcmFile);
+        int readBytes = fis.read(pcmData);
+        fis.close();
+        return pcmData;
+    }
 }

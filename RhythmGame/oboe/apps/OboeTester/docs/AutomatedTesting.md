@@ -92,7 +92,7 @@ There are several optional parameters in common for glitch, latency, input, and 
     --ei sample_rate        {hertz}
     --es in_perf            {"none", "lowlat", "powersave"}  // input performance mode, default is "lowlat"
     --es out_perf           {"none", "lowlat", "powersave"}  // output performance mode, default is "lowlat"
-    --es out_usage          {"media", "voice_communication", "alarm", "notification", "game"} // default is media
+    --es out_usage          {"media", "voice_communication", "alarm", "notification", "nativePlayer"} // default is media
     --es in_sharing         {"shared", "exclusive"} // input sharing mode, default is "exclusive"
     --es out_sharing        {"shared", "exclusive"} // output sharing mode, default is "exclusive"
     --ez in_use_mmap        {"true", 1, "false", 0} // if true then MMAP is allowed, if false then MMAP will be disabled
@@ -139,7 +139,7 @@ For example, a complete command for a "latency" test might be:
         --ef volume 0.8 \
         --es volume_type music \
         --ei out_channels 1 \
-        --es out_usage game \
+        --es out_usage nativePlayer \
         --es file latency20230608.txt
 
 or for a "glitch" test:
@@ -199,7 +199,7 @@ in.burst.frames = 96
 in.xruns = 0
 out.channels = 1
 out.perf = ll
-out.usage = game
+out.usage = nativePlayer
 out.contentType = music
 out.sharing = ex
 out.api = aaudio

@@ -2,7 +2,7 @@ Oboe Samples
 ==============
 These samples demonstrate how to use the Oboe library to create and use a native audio player playing mp3 file:
 
-1. [RhythmGame](RhythmGame): A simple rhythm game where you copy the clap patterns you hear by tapping on the screen.
+1. [RhythmGame](RhythmGame): A simple rhythm nativePlayer where you copy the clap patterns you hear by tapping on the screen.
 There is an associated codelab to follow along with. (Java)
 
 Pre-requisites

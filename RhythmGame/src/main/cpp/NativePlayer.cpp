@@ -17,6 +17,7 @@
 #include <utils/logging.h>
 #include <thread>
 #include <cinttypes>
+#include <jni.h>
 
 #include "NativePlayer.h"
 
@@ -213,24 +214,19 @@ bool NativePlayer::setupAudioSources() {
         LOGE("Could not load source data for clap sound");
         return false;
     }
+
     mClap = std::make_unique<Player>(mClapSource);
 
-    // Create a data source and player for our backing track
-    std::shared_ptr<AAssetDataSource> backingTrackSource {
-            AAssetDataSource::newFromCompressedAsset(mAssetManager, kBackingTrackFilename, targetProperties)
-    };
-    if (backingTrackSource == nullptr){
-        LOGE("Could not load source data for backing track");
-        return false;
-    }
-    mBackingTrack = std::make_unique<Player>(backingTrackSource);
-    mBackingTrack->setPlaying(true);
-    mBackingTrack->setLooping(true);
-
+//    // Create a data source and player for our backing track
+//    std::shared_ptr<AAssetDataSource> backingTrackSource {
+//            AAssetDataSource::newFromCompressedAsset(mAssetManager, kBackingTrackFilename, targetProperties)
+//    };
+//    if (backingTrackSource == nullptr){
+//        LOGE("Could not load source data for backing track");
+//        return false;
+//    }
     // Add both players to a mixer
     mMixer.addTrack(mClap.get());
-    mMixer.addTrack(mBackingTrack.get());
-
     return true;
 }
 
@@ -238,4 +234,41 @@ void NativePlayer::scheduleSongEvents() {
 
     for (auto t : kClapEvents) mClapEvents.push(t);
     for (auto t : kClapWindows) mClapWindows.push(t);
+}
+
+void NativePlayer::passPcmData(
+        JNIEnv *env,jobject pcm_buffer,
+                               jint num_channels,
+                               jint sample_rate){
+
+    uint8_t *pcmData = static_cast<uint8_t *>(env->GetDirectBufferAddress(pcm_buffer));
+    jlong numBytes = env->GetDirectBufferCapacity(pcm_buffer);
+
+    AudioProperties targetProperties {
+            .channelCount = static_cast<int32_t>(num_channels),
+            .sampleRate = static_cast<int32_t>(sample_rate)
+    };
+
+    std::shared_ptr<AAssetDataSource> backingTrackSource {
+            AAssetDataSource::newFromPcmData(
+                    pcmData,
+                    numBytes,
+                    targetProperties
+            )
+    };
+
+    if (backingTrackSource == nullptr){
+        LOGE("Could not load source data for clap sound");
+        return;
+    }else{
+        LOGE("Rnandomsdasdsa");
+    }
+
+    LOGD("backingTrackSource numSamples: %" PRId64, backingTrackSource->getSize());
+
+    mBackingTrack = std::make_unique<Player>(backingTrackSource);
+    mBackingTrack->setPlaying(true);
+    mBackingTrack->setLooping(true);
+
+    mMixer.addTrack(mBackingTrack.get());
 }

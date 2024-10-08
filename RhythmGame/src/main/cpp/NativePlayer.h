@@ -57,6 +57,7 @@ public:
 
     // Inherited from oboe::AudioStreamErrorCallback.
     void onErrorAfterClose(AudioStream *oboeStream, Result error) override;
+    void passPcmData(JNIEnv *env, jobject pcm_buffer, jint num_channels, jint sample_rate);
 
 private:
     AAssetManager& mAssetManager;

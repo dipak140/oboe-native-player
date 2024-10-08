@@ -22,7 +22,7 @@
 constexpr int kBufferSizeInBursts = 2; // Use 2 bursts as the buffer size (double buffer)
 constexpr int kMaxQueueItems = 4; // Must be power of 2
 
-// Colors for game states and visual feedback for taps
+// Colors for nativePlayer states and visual feedback for taps
 constexpr ScreenColor kPlayingColor = GREY;
 constexpr ScreenColor kLoadingColor = YELLOW;
 constexpr ScreenColor kLoadingFailedColor = RED;
@@ -39,9 +39,9 @@ constexpr int kWindowCenterOffsetMs = 100;
 constexpr char kClapFilename[] { "CLAP.mp3" };
 
 // Filename for the backing track asset (in assets folder)
-constexpr char kBackingTrackFilename[] { "FUNKY_HOUSE.mp3" };
+constexpr char kBackingTrackFilename[] { "Music.mp3" };
 
-// The game will first demonstrate the pattern which the user should copy. It does this by
+// The nativePlayer will first demonstrate the pattern which the user should copy. It does this by
 // "clapping" (playing a clap sound) at certain times during the song. We can specify these times
 // here in milliseconds. Our backing track has a tempo of 120 beats per minute, which is 2 beats per
 // second. This means a pattern of 3 claps starting on the first beat of the first bar would mean
