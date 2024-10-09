@@ -48,11 +48,12 @@ void NativePlayer::load() {
     mGameState = GameState::Playing;
 }
 
-void NativePlayer::start() {
+void NativePlayer::start(JNIEnv *env, jobject pcm_buffer, int num_channels, int sample_rate) {
 
     // async returns a future, we must store this future to avoid blocking. It's not sufficient
     // to store this in a local variable as its destructor will block until NativePlayer::load completes.
     mLoadingResult = std::async(&NativePlayer::load, this);
+    passPcmData(env, pcm_buffer, num_channels, sample_rate);
 }
 
 void NativePlayer::stop(){
@@ -147,7 +148,7 @@ void NativePlayer::onErrorAfterClose(AudioStream *audioStream, Result error) {
         mCurrentFrame = 0;
         mSongPositionMs = 0;
         mLastUpdateTime = 0;
-        start();
+//        start();
     } else {
         LOGE("Stream error: %s", convertToText(error));
     }

@@ -28,7 +28,10 @@ std::unique_ptr<NativePlayer> nativePlayer;
 
 JNIEXPORT void JNICALL
 Java_com_google_oboe_samples_rhythmgame_MainActivity_native_1onStart(JNIEnv *env, jobject instance,
-                                                                     jobject jAssetManager) {
+                                                                     jobject jAssetManager,
+                                                                     jobject pcm_buffer,
+                                                                     jint num_channels,
+                                                                     jint sample_rate) {
 
     AAssetManager *assetManager = AAssetManager_fromJava(env, jAssetManager);
     if (assetManager == nullptr) {
@@ -37,7 +40,7 @@ Java_com_google_oboe_samples_rhythmgame_MainActivity_native_1onStart(JNIEnv *env
     }
 
     nativePlayer = std::make_unique<NativePlayer>(*assetManager);
-    nativePlayer->start();
+    nativePlayer->start(env, pcm_buffer, num_channels, sample_rate);
 }
 
 JNIEXPORT void JNICALL
