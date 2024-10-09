@@ -33,6 +33,19 @@
 
 constexpr int kMaxCompressionRatio { 12 };
 
+AAssetDataSource* AAssetDataSource::newFromPcmData(
+        uint8_t* pcmData,
+        int64_t numSamples,
+        const AudioProperties targetProperties) {
+
+    // Allocate a float buffer
+    auto outputBuffer = std::make_unique<float[]>(numSamples);
+    memcpy(outputBuffer.get(), pcmData, numSamples * sizeof(float));
+
+    // Create and return AAssetDataSource
+    return new AAssetDataSource(std::move(outputBuffer), numSamples, targetProperties);
+}
+
 AAssetDataSource* AAssetDataSource::newFromCompressedAsset(
         AAssetManager &assetManager,
         const char *filename,

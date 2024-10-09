@@ -1,21 +1,21 @@
 Rhythm NativePlayer sample
 ==================
 
-This sample demonstrates how to build a simple musical game. The objective of the game is to clap in time to a song by copying what you hear. You do this by listening to the clap sounds, then tapping on the screen to copy those claps.
+This sample demonstrates how to build a simple musical nativePlayer. The objective of the nativePlayer is to clap in time to a song by copying what you hear. You do this by listening to the clap sounds, then tapping on the screen to copy those claps.
 
-For a step-by-step guide on how this game works and how to build it check out this codelab: [Build a Musical NativePlayer using Oboe](https://developer.android.com/codelabs/musicalgame-using-oboe). 
+For a step-by-step guide on how this nativePlayer works and how to build it check out this codelab: [Build a Musical NativePlayer using Oboe](https://developer.android.com/codelabs/musicalgame-using-oboe). 
 
 
 Screenshots
 -----------
-The UI is deliberately very simple - just tap anywhere in the grey area after hearing the claps. The UI will change color to indicate the game state. The colors are: 
+The UI is deliberately very simple - just tap anywhere in the grey area after hearing the claps. The UI will change color to indicate the nativePlayer state. The colors are: 
 
 - Yellow: NativePlayer is loading (assets are being decompressed)
 - Grey: NativePlayer is being played
 - Orange: You tapped too early
 - Green: You tapped on time
 - Purple: You tapped too late
-- Red: There was a problem loading the game (check logcat output)
+- Red: There was a problem loading the nativePlayer (check logcat output)
 
 ![RhythmGame Screenshot](images/RhythmGame-screenshot.png)
 
@@ -23,9 +23,9 @@ The UI is deliberately very simple - just tap anywhere in the grey area after he
 ### Audio timeline
 ![NativePlayer timeline](images/1-timeline.png "NativePlayer timeline")
 
-The game plays the clap sounds on the first 3 beats of the bar. These are played in time with the backing track.
+The nativePlayer plays the clap sounds on the first 3 beats of the bar. These are played in time with the backing track.
 
- When the user taps on the screen, a clap sound is played and the game checks whether the tap occurred within an acceptable time window.
+ When the user taps on the screen, a clap sound is played and the nativePlayer checks whether the tap occurred within an acceptable time window.
 
 ### Architecture
 
@@ -79,9 +79,9 @@ Once we know the result of the tap the UI is updated with a color to give the us
 Note that once a tap has been received the tap window is removed from the queue - the user only gets one chance to get their tap right! 
 
 ### Use of compressed audio assets
-In order to reduce APK size this game uses MP3 files for its audio assets. These are extracted on game startup in `AAssetDataSource::newFromCompressedAsset`. A yellow screen will be shown during this process. 
+In order to reduce APK size this nativePlayer uses MP3 files for its audio assets. These are extracted on nativePlayer startup in `AAssetDataSource::newFromCompressedAsset`. A yellow screen will be shown during this process. 
 
-By default the game uses `NDKExtractor` for asset extraction and decoding. Under the hood this uses the [NDK Media APIs](https://developer.android.com/ndk/reference/group/media). 
+By default the nativePlayer uses `NDKExtractor` for asset extraction and decoding. Under the hood this uses the [NDK Media APIs](https://developer.android.com/ndk/reference/group/media). 
 
 There are some limitations with this approach: 
 

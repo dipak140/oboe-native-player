@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/RhythmGame/oboe-native-player.RhythmGame.iml" filepath="$PROJECT_DIR$/.idea/modules/RhythmGame/oboe-native-player.RhythmGame.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RhythmGame/oboe-native-player.RhythmGame.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RhythmGame/oboe-native-player.RhythmGame.main.iml" />
     </modules>
   </component>
 </project>

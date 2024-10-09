@@ -33,6 +33,9 @@ public:
             const char *filename,
             AudioProperties targetProperties);
 
+    static AAssetDataSource *
+    newFromPcmData(uint8_t *pcmData, int64_t numBytes, const AudioProperties targetProperties);
+
 private:
 
     AAssetDataSource(std::unique_ptr<float[]> data, size_t size,
@@ -45,6 +48,5 @@ private:
     const std::unique_ptr<float[]> mBuffer;
     const int64_t mBufferSize;
     const AudioProperties mProperties;
-
 };
 #endif //RHYTHMGAME_AASSETDATASOURCE_H

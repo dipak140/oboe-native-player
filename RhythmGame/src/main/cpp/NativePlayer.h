@@ -43,7 +43,7 @@ enum class GameState {
 class NativePlayer : public AudioStreamDataCallback, AudioStreamErrorCallback {
 public:
     explicit NativePlayer(AAssetManager&);
-    void start();
+    void start(JNIEnv *env,jobject pcm_buffer, int num_channels, int sample_rate);
     void stop();
     void onSurfaceCreated();
     void onSurfaceDestroyed();
@@ -57,6 +57,7 @@ public:
 
     // Inherited from oboe::AudioStreamErrorCallback.
     void onErrorAfterClose(AudioStream *oboeStream, Result error) override;
+    void passPcmData(JNIEnv *env, jobject pcm_buffer, jint num_channels, jint sample_rate);
 
 private:
     AAssetManager& mAssetManager;
